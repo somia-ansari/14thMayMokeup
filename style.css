@@ -1,0 +1,41 @@
+/* write your styles here */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+span{
+    transition: 0.5s;
+    
+}
+footer:hover span {
+    color: red;
+}
+
+marquee {
+    background-color: red;
+    color: white;
+}
+#nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4c4c4c;
+
+
+}
+#nav img {
+    width: 3em;
+    height: 2em;
+    padding: 1em;
+    background-color: #4c4c4c;
+    margin:0px;
+}
+#nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1em;
+    color: #c4c4c4;
+    background-color: #4c4c4c;
+}
