@@ -22,6 +22,7 @@ marquee {
     display: flex;
     justify-content: space-between;
     background-color: #4c4c4c;
+    align-items:center;
 
 
 }
@@ -38,4 +39,114 @@ marquee {
     padding: 1em;
     color: #c4c4c4;
     background-color: #4c4c4c;
+}
+#nav ul{
+    display: flex;
+    flex: 1;
+    width:100%;
+    margin:0;
+    padding: 0;
+}
+body * {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.join {
+    padding:1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: #f08d97 url(images/floral.png) repeat-y;
+}
+.join h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:900;
+}
+.join p {
+    font-weight:bold;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    padding: 20px;
+    text-align:center;
+     
+}
+.join button {
+    background-color: black;
+    border:none;
+    color:#f08d97;
+    font-weight:bold;
+    font-size:large;
+    padding:10px 50px;
+    letter-spacing:2px;
+}
+.services {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #efece7 url(images/floral.png) repeat-y;
+}
+.services h2 {
+    font-family: 'Italianno', cursive;
+}
+.services p {
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    margin-top:0;
+}
+.services i {
+    font-size:6em;
+}
+.services h1 {
+    font-weight:900;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+.portfolio {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ddceb4 url(images/floral.png) repeat-y;
+}
+.portfolio h2 {
+    font-family: 'Sofia', cursive;
+}
+.portfolio p {
+    font-weight:bold;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    padding: 20px;
+    text-align:center;
+     
+}
+.projects {
+    padding: 20px;
+    text-align:center;
+}
+.projects > img {
+    width: 59%;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.contact {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #afc7c6 url(images/floral.png) repeat-y;
+}
+.contact h1 {
+    font-family: 'Grand Hotel', cursive;
+}
+.social i {
+    font-size:2em;
+    border: 1px solid black;
+    padding:10px;
+    border-radius: 75px;
 }
