@@ -5,13 +5,7 @@ footer {
     background-color: black;
     color: white;
 }
-span{
-    transition: 0.5s;
-    
-}
-footer:hover span {
-    color: red;
-}
+
 
 marquee {
     background-color: red;
@@ -143,8 +137,36 @@ body * {
     width: 75%;
     margin: 15px;
     border-radius: 8px;
+    height: 110px;
 }
-
+.projects figure{
+    position: relative;
+}
+.projects figcaption{
+    background-color: #050505cc;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    width: 75%;
+    margin: 15px;
+    border-radius: 8px;
+    height: 110px;
+}
+.projects figcaption i{
+    border:1px solid white;
+    border-radius:40px;
+    padding:8px;
+    margin-bottom:20px;
+}
+.projects figcaption h3 {
+    margin-bottom:8px;
+}
 .contact {
     padding: 1em;
     display: flex;
@@ -220,6 +242,23 @@ body * {
         display: inline-block;
         width: 40%;
         margin:0;
+        position: relative;
+    }
+    .projects figcaption{
+        background-color: #050505cc;
+        color: white;
+        position: relative;
+        z-index: 1;
+        left: 28px;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        top: -140px;
+        width: 75%;
+        margin: 0px;
+        border-radius: 8px;
+        height: 120px;
     }
     .contact h1 {
         font-size: 2.5em;
@@ -262,6 +301,18 @@ body * {
         display: inline-block;
         width: 25%;
         margin:0;
+        position:relative;
+    }
+    .projects figcaption{
+        position:absolute;
+        z-index: 1;
+        left: 15px;
+        top: 0;
+        width: 75%;
+        margin: 15px;
+        height: 120px;
+        display:none;
+
     }
     .contact i {
     font-size: 2em;
@@ -270,3 +321,27 @@ body * {
     border-radius:100px;
     }
     }
+
+    /* Hover styling */
+
+    .social i:hover{
+        color: #fcdea6;
+        background-color:black;
+        transition: 0.5s;
+
+    }
+    footer:hover span {
+        color: red;
+        transition: 0.5s;
+    
+    }
+   .projects figure:hover figcaption{
+        display:flex;
+        transition: 1s;
+
+   } 
+   .join button:hover{
+        cursor: pointer;
+        color: wheat;
+        transition: 0.5s;
+}
