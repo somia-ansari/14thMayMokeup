@@ -1,4 +1,3 @@
-/* write your styles here */
 footer {
     display: flex;
     align-items: center;
@@ -23,22 +22,17 @@ marquee {
     justify-content: space-between;
     background-color: #4c4c4c;
     align-items:center;
-
-
 }
 #nav img {
     width: 3em;
     height: 2em;
     padding: 1em;
-    background-color: #4c4c4c;
     margin:0px;
 }
 #nav ul li {
     list-style-type: none;
-    display: inline;
     padding: 1em;
     color: #c4c4c4;
-    background-color: #4c4c4c;
 }
 #nav ul{
     display: flex;
@@ -61,6 +55,8 @@ body * {
 .join h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight:900;
+    padding:0px 20px;
+    text-align:center;
 }
 .join p {
     font-weight:bold;
@@ -88,24 +84,35 @@ body * {
     background: #efece7 url(images/floral.png) repeat-y;
 }
 .services h2 {
-    font-family: 'Italianno', cursive;
+    font-family: 'Sofia', cursive;
+    font-size:2em;
 }
 .services p {
-    font-weight: bold;
     padding: 20px;
     text-align: center;
     margin-top:0;
 }
-.services i {
+.services > figure {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    font-size:1.5em;
+}
+
+    .services i {
     font-size:6em;
 }
 .services h1 {
     font-weight:900;
     font-size: 1em;
     margin-bottom: 0;
+    text-align: center;
 }
 .portfolio {
-    padding: 1em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,25 +121,31 @@ body * {
 }
 .portfolio h2 {
     font-family: 'Sofia', cursive;
+    font-size: 2.4em;
 }
 .portfolio p {
-    font-weight:bold;
     border-top:1px solid;
     border-bottom:1px solid;
-    padding: 20px;
+    padding: 30px;
     text-align:center;
+    font-size: 1.8em;
      
 }
 .projects {
     padding: 20px;
     text-align:center;
-}
-.projects > img {
-    width: 59%;
-    margin: 15px;
-    border-radius: 8px;
+    display: flex;
 }
 
+.projects figure {
+    width: 50%;
+    margin: 15px;
+    border-radius: 8px;
+    display: block;
+}
+.portfolio figure img{
+    width: 100%;
+}
 .contact {
     padding: 1em;
     display: flex;
@@ -142,7 +155,7 @@ body * {
     background: #afc7c6 url(images/floral.png) repeat-y;
 }
 .contact h1 {
-    font-family: 'Grand Hotel', cursive;
+    font-family: 'Sofia', cursive;  
 }
 .social i {
     font-size:2em;
@@ -150,3 +163,39 @@ body * {
     padding:10px;
     border-radius: 75px;
 }
+@media screen and (min-width:620px) and (max-width:960px) {
+    
+
+
+    .join {
+        padding: 1.5em;
+        font-size: 2em;
+    }
+
+    .join p {
+        font-weight:100;
+        padding:20px 0px;
+        font-size: 28px;
+    }
+
+    .join button {
+        font-size:1.4em;
+        padding:20px 80px;
+        }
+
+    #nav img {
+        width: 5em;
+        height: 3em;
+        padding: 1.5em;
+        margin:0px;
+    }
+
+    #nav ul li {
+        list-style-type: none;
+        padding: 1.5em;
+        color: #c4c4c4;
+        font-size:1.2em;
+        font-weight: bold;
+    }
+
+} 
