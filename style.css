@@ -31,7 +31,7 @@ marquee {
 }
 #nav ul li {
     list-style-type: none;
-    padding: 1em;
+    padding: 0.5em;
     color: #c4c4c4;
 }
 #nav ul{
@@ -41,8 +41,12 @@ marquee {
     margin:0;
     padding: 0;
 }
+body{
+    margin: 0;
+}
 body * {
     font-family: 'Nunito Sans', sans-serif;
+    
 }
 .join {
     padding:1em;
@@ -87,13 +91,6 @@ body * {
     font-family: 'Sofia', cursive;
     font-size:2em;
 }
-.services > figure {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .services p {
     padding: 10px;
     text-align: center;
@@ -108,6 +105,7 @@ body * {
 .services i {
     font-size:6em;
 }
+
 .services h1 {
     font-weight:900;
     font-size: 1em;
@@ -137,41 +135,65 @@ body * {
 .projects {
     padding: 20px;
     text-align:center;
+    flex-wrap: wrap;
+    display: flex;
 }
-
-.projects img {
-    width: 75%;
-    margin: 15px;
-    border-radius: 8px;
-    height: 110px;
-}
-.projects figure{
-    position: relative;
-}
-.projects figcaption{
-    background-color: #050505cc;
-    color: white;
-    position: absolute;
-    z-index: 1;
-    left: 5%;
-    display: none;
-    justify-content: center;
+.portfolio figcaption {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    top: 0;
-    width: 75%;
-    margin: 15px;
-    border-radius: 8px;
-    height: 110px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000bd;
+    border-radius: 15px;
+    opacity: 0;
+}
+.portfolio figure{
+    border-radius: 15px;
+    width: 100%;
+    margin: 10px;
+    height: 145px;
+    background-size: cover;
+}
+#view-opt{
+    display: flex;
+}
+.portfolio figure#locations{
+    background-image: url(images/projects/p-1.png);
+    
+}
+.portfolio figure#reachout{
+    background-image: url(images/projects/p-2.png);
+}
+.portfolio figure#olx{
+    background-image: url(images/projects/p-3.png);
+    
+}
+.portfolio figure#collection{
+    background-image: url(images/projects/p-4.png);
+    
+}
+.portfolio figure#tvplus{
+    background-image: url(images/projects/p-5.png);
+    
+}
+.portfolio figure#shoe{
+    background-image: url(images/projects/p-6.png);
+    
 }
 .projects figcaption i{
     border:1px solid white;
-    border-radius:40px;
+    border-radius:50%;
     padding:8px;
+    margin: 5px;
     margin-bottom:20px;
+    color: white;
 }
 .projects figcaption h3 {
     margin-bottom:8px;
+    color: white;
 }
 .contact {
     padding: 1em;
@@ -240,31 +262,18 @@ body * {
     .portfolio h2 {
         font-size: 2.5em;
     }
+    .portfolio figcaption{
+        opacity: 0;
+    }
     .portfolio p {
         font-size: 1.5em;
         padding: 30px;
     }
-    .projects figure {
-        display: inline-block;
-        width: 40%;
-        margin:0;
-        position: relative;
+    .portfolio figure{
+        width: 45%;
     }
-    .projects figcaption{
-        background-color: #050505cc;
-        color: white;
-        position: relative;
-        z-index: 1;
-        left: 28px;
-        display: none;
+    .projects {
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        top: -140px;
-        width: 75%;
-        margin: 0px;
-        border-radius: 8px;
-        height: 120px;
     }
     .contact h1 {
         font-size: 2.5em;
@@ -276,6 +285,15 @@ body * {
     }
     } 
 @media screen and (min-width:961px) {
+    #nav img {
+    width: 5em;
+    height: 3em;
+}
+#nav ul li {
+    list-style-type: none;
+    padding: 1.5em;
+    font-size: 1.2em;
+}
     .join h1 {
         font-size: 3em;
     }
@@ -299,55 +317,61 @@ body * {
     padding: 0px 15px;
     font-size:0.8em;
     }
+    .services i {
+        font-size:120px;
+    }
     .portfolio p {
         width: 55%;
         padding: 20px 50px;
     }
-    .projects figure {
-        display: inline-block;
-        width: 25%;
-        margin:0;
-        position:relative;
+    .portfolio figure{
+        width: 30%
     }
-    .projects figcaption{
-        position:absolute;
-        z-index: 1;
-        left: 15px;
-        top: 0;
-        width: 75%;
-        margin: 15px;
-        height: 120px;
-        display:none;
-
+    .portfolio figcaption{
+        opacity: 0;
     }
+        
     .contact i {
     font-size: 2em;
     margin: 8px;
     padding: 0.4em;
-    border-radius:100px;
+    border-radius:50%;
     }
-    }
+}
+    
 
     /* Hover styling */
 
-    .social i:hover{
+    .contact i:hover {
         color: #fcdea6;
-        background-color:black;
+        background-color: black;
         transition: 0.5s;
-
+        cursor: pointer;
     }
     footer:hover span {
         color: red;
         transition: 0.5s;
     
     }
-   .projects figure:hover figcaption{
-        display:flex;
-        transition: 1s;
-
-   } 
-   .join button:hover{
-        cursor: pointer;
-        color: wheat;
+    .portfolio figure:hover figcaption{
+        opacity: 1;
         transition: 0.5s;
-}
+    }
+
+    .join button:hover{
+        cursor: pointer;
+        background-color: #ed484d;
+        transition: 0.5s;
+        box-shadow: 0px 0px 5px white;
+        color: white;
+    }
+    .services figure:hover i {
+        color: #ed484d;
+        transition: 0.5s;
+
+    }
+    #view-opt i:hover{
+        color: black;
+        background-color: white;
+        transition: 0.5s;
+    }
